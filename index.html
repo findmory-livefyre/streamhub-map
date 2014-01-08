@@ -13,8 +13,23 @@
 <link rel="stylesheet" href="http://cdn.livefyre.com/libs/sdk/v2.2.0/streamhub-sdk.min.css" /></link>
 </head>
 <body>
-<div id="lf_map"></div>
-    <script src="js/map.js"></script>
+	<h3>Here's where people are talking about</h3>
+	<div id="lf_map"></div>
+	<script src="js/map.js"></script>
+	<script>
+	(function($) {
 
+		$( document ).ready(function() {
+    		 //jank to prepopulate some older items
+     		for (var i=1; i<20; i++){
+    			setTimeout(function(){
+					$(".hub-list-more").click();
+				}, i*500);
+    		}
+		});
+
+	})(Livefyre.require('jquery'))
+		
+	</script>
 </body>
 </html>
