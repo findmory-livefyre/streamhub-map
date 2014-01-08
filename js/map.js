@@ -34,7 +34,7 @@ Livefyre.require(['streamhub-sdk/collection','streamhub-map/content/content-map-
     });
     var view = new ContentMapView({
         el: document.getElementById("lf_map"),
-        initial: 25, //not supported in this version of ContentMapView
+        initial: 300, //not supported in this version of ContentMapView
         showMore: 25 //not supported in this version of ContentMapView
     });
     collection.pipe(view);
